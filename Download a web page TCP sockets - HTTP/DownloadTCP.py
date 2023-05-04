@@ -9,11 +9,11 @@ class Downloader:
         self.path = self.get_path()
 
     def get_host(self):
-        # Extract the host name from the URL
+       
         return self.url.split('/')[2]
 
     def get_path(self):
-        # Extract the path from the URL
+      
         return '/' + '/'.join(self.url.split('/')[3:])
 
     def download(self):
